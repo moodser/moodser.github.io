@@ -2,8 +2,8 @@
 title:               Moodser Hussain
 tagline:             'Research Scholar'
 description:         'An experienced lecturer with a demonstrated history of working in the field of computer science. Skilled in Natural Language Processing (NLP), Data Science, and Machine Learning.'
-url:                 moodser.github.io
-baseurl:             'https://moodser.github.io'
+url:
+baseurl:             ''
 paginate:            5
 #permalink:           pretty
 
