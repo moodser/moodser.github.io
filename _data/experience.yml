@@ -1,0 +1,29 @@
+# Experience template
+- layout: left
+  company: The Superior University Lahore, Pakistan
+  link: https://csit.superior.edu.pk/
+  job_title: Lecturer
+  dates: October 2019 - Present
+  quote: >
+   A leading entrepreneurial university in Pakistan, committed to transform the lives of students, faculty, staff and alumni by providing an excellent learning and research environment which ensures success in their lives and career.
+  description: | # this will include new lines to allow paragraphs
+    Responsibilities:
+      - Lecture planning, preparation and research
+      - Content and teaching time with students
+      - Checking and accessing student’s work
+      - Invigilating examinations and attending staff meetings
+      - Supervision and commercialisation of final year projects
+
+
+- layout: left
+  company: Virtual University of Pakistan
+  link: https://www.vu.edu.pk/
+  job_title: Computer Science Instructor
+  dates: May 2019 - October 2019
+  quote: >
+   Pakistan’s first university completely based on modern Information and Communication Technologies, was established by the Government as a public sector, not-for-profit institution with a clear mission: to provide extremely affordable world class education to aspiring students all over the country.
+  description: | # this will include new lines to allow paragraphs
+    Responsibilities:
+      - Conduct online discussion sessions for students
+      - Record lectures and presentations for undergrad students
+      - Communicate with students through chat-room, email, and LMS

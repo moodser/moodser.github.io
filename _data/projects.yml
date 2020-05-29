@@ -1,0 +1,31 @@
+# Project template
+- layout: top
+  name: English-Urdu Machine Translation System
+  link: #
+  github: #
+  # quote: >
+    # Short overview of the project (optional)
+  description: | # this will include new lines to allow paragraphs
+    - Bidirectional machine translation system
+    - Statistical and Neural MT techniques
+    - Enhanced by supervised machine transliteration
+    - Diverse language models with extended word n-gram support
+
+- layout: top
+  name: CNN-based Mood Classifier
+  link: #
+  github: #
+  # quote: >
+    # Short overview of the project (optional)
+  description: | # this will include new lines to allow paragraphs
+
+
+
+- layout: top
+  name: Author Profiling using Twitter Data
+  link: #
+  github: #
+  # quote: >
+    # Short overview of the project (optional)
+  description: | # this will include new lines to allow paragraphs
+    

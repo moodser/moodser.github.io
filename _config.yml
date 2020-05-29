@@ -1,0 +1,96 @@
+# Site
+repository: moodser/moodser.github.io #Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+favicon: assets/favicon.ico
+
+# Personal info
+name: Moodser Hussain
+title: Computer Science Lecturer
+email: moodser.hussain@gmail.com
+#phone: Your phone number (optional)
+website: https://moodser.github.io/
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+#twitter_username: jekyllrb
+github_username:  moodser
+#stackoverflow_username: "00000001"
+#dribbble_username: jekyll
+facebook_username: moodser
+#flickr_username: jekyll
+#instagram_username: jekyll
+linkedin_username: moodser
+#xing_username: jekyll
+#pinterest_username: jekyll
+#youtube_username: jekyll
+#googleplus_username: +jekyll
+#orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+#additional_links:
+#- title: Link name
+#  icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#  url: Link url (eg. https://google.com)
+# - title: another link
+#   icon: font awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: assets/profile.jpg #Directory of profile image (eg. images/profile.jpg)
+about_content: | # this will include new lines to allow paragraphs
+  An enthusiastic, adaptive and fast-learning person with a broad and acute interest in machine learning, data science and NLP. Particularly enjoy collaborating with scientists from different disciplines to develop new skills and solve new challenges.
+  A confident speaker in conferences and teacher in classrooms, able to explain complex information to audience of all levels.
+
+# Projects Section
+# projects_title: Projects #(Use this to override about projects section title)
+
+# Experience Section
+# experience_title: Experience #(Use this to override about experience section title)
+
+# Education Section
+# education_title: Education #(Use this to override about education section title)
+
+# More Section
+# more_title: A Little More About Me #(Use this to override about more section title)
+more_content: | # this will include new lines to allow paragraphs
+  - **Technical Skills:**
+    - **Research & Planning:** Problem Identification, Information Collection, Results Analysis
+    - **NLP/Machine Learning:** Machine Translation, Parts-of-Speech Tagging, Text Preprocessing, Text Classification, Recommendation Systems, Data Visualization Pandas, PyTorch, WEKA
+    - **Tools:** Jupyter Notebook, Git, Anaconda, Spyder, Dreamweaver, MS Office, VS Code, PyCharm, MySQL Workbench
+    - **Languages/Scripts:** Python, Tex, Jekyll, C/C++, HTML, CSS, PHP
+  - **[Tutorials and Lecture Notes](https://moodser.github.io/notes/)**
+
+# Footer
+footer_show_references: true
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
