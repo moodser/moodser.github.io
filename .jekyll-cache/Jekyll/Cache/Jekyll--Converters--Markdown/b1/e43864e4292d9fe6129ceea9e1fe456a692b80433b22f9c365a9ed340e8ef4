@@ -1,0 +1,21 @@
+I"<hr />
+
+<h2 id="table-of-content"><strong>Table of Content</strong></h2>
+<hr />
+
+<p>This post is a part of series about deep learning algorithms. <a href="/topic/aidl">Visit this link</a>, to explore other related topics/concepts. Today, we are going to discuss linear regression in context of a simple neural network. But first, we need to clear some basic concepts and terminologies.</p>
+
+<h2 id="binary-classification">Binary Classification</h2>
+<p>Binary classification is the simplest kind of machine learning problem. The goal of binary classification is to categories data points into one of two buckets: 0 or 1, true or false, to survive or not to survive, blue or no blue eyes, etc.</p>
+
+<p>Today, we will go through two example scenarios of binary classification:</p>
+<ul>
+  <li><strong>Surviving the Titanic if you were a passenger:</strong> either you have survived or not survived the sinking of the Titanic (assuming you were on the Titanic).</li>
+  <li><strong>Flight delays - admittedly, flight delays would qualify as a regression problem:</strong> there are no finitely many buckets you want to categorize some flight delay into. In this scenario, however, I have transformed the regression problem into a classification problem, since I only want to know if a flight will have a delay of more than 15 minutes or less.</li>
+</ul>
+
+<h2 id="references">References</h2>
+<ul>
+  <li><a href="https://oliviaklose.azurewebsites.net/machine-learning-6-binary-classification/">Discussion: Classification and its applications</a></li>
+</ul>
+:ET

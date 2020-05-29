@@ -1,0 +1,10 @@
+I"¸<hr />
+
+<h2 id="table-of-content"><strong>Table of Content</strong></h2>
+<hr />
+
+<p>This post is a part of series about deep learning algorithms. <a href="/topic/aidl">Visit this link</a>, to explore other related topics/concepts. Today, we are going to discuss linear regression in context of a simple neural network. But first, we need to clear some basic concepts and terminologies.</p>
+
+<h2 id="binary-classification">Binary Classification</h2>
+<p>Binary classification is the simplest kind of machine learning problem. The goal of binary classification is to categories data points into one of two buckets: 0 or 1, true or false, to survive or not to survive, blue or no blue eyes, etc.</p>
+:ET

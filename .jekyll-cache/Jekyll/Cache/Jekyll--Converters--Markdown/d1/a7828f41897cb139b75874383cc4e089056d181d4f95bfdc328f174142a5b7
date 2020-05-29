@@ -1,0 +1,132 @@
+I"J<<hr />
+
+<p><strong>Table of Content</strong></p>
+<ul>
+  <li>Applications of AI</li>
+  <li>Types of Artificial Intelligence</li>
+  <li>AI vs Machine Learning vs Deep learning</li>
+  <li>Machine learning</li>
+  <li>Deep Learning</li>
+  <li>Artificial Neural Network
+    <ul>
+      <li>Neuron and Activation function</li>
+      <li>Variations of Artificial Neural networks</li>
+    </ul>
+  </li>
+  <li>Data structures</li>
+  <li>Classification of learning algorithms: based on style</li>
+</ul>
+<hr />
+
+<p>Back in the 1950s, pioneers described artificial intelligence as any task performed by a program or a machine that, if a human carried out the same activity, we would say the human had to apply intelligence to accomplish the task. That obviously is a fairly broad definition, which is why you will sometimes see arguments over whether something is truly AI or not.</p>
+
+<p>AI systems will typically demonstrate at least some of the behaviors associated with human intelligence that are planning, learning, reasoning, problem solving, knowledge representation, perception, motion, manipulation and, to a lesser extent, social intelligence and creativity. The term artificial intelligence can simply be described as:</p>
+<blockquote>
+  <p>AI or artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems.</p>
+</blockquote>
+
+<h3 id="applications-of-artificial-intelligence">Applications of Artificial Intelligence</h3>
+<p>AI is ubiquitous today, used to recommend what you should buy next online, to understand what you say to virtual assistants such as Amazon’s Alexa and Apple’s Siri, to recognize who and what is in a photo, to spot spam, or detect credit card fraud.</p>
+
+<h3 id="types-of-artificial-intelligence">Types of Artificial Intelligence</h3>
+<p>At a very high level artificial intelligence can be split into two broad types: narrow AI and general AI.</p>
+
+<h4 id="narrow-ai">Narrow AI</h4>
+<p>Narrow AI is what we see all around us in computers today: intelligent systems that have been taught or learned how to carry out specific tasks without being explicitly programmed how to do so. This type of machine intelligence is evident in the speech and language recognition of the Siri virtual assistant on the Apple iPhone, in the vision-recognition systems on self-driving cars, in the recommendation engines that suggest products you might like based on what you bought in the past. Unlike humans, these systems can only learn or be taught how to do specific tasks, which is why they are called narrow AI.</p>
+
+<p><em>Power of Narrow AI:</em> There are a vast number of emerging applications for narrow AI: interpreting video feeds from drones carrying out visual inspections of infrastructure such as oil pipelines, organizing personal and business calendars, responding to simple customer-service queries, coordinating with other intelligent systems to carry out tasks like booking a hotel at a suitable time and location, helping radiologists to spot potential tumors in X-rays, flagging inappropriate content online, detecting wear and tear in elevators from data gathered by IoT devices, the list goes on and on.</p>
+
+<h4 id="general-ai">General AI</h4>
+<p>Artificial general intelligence is very different, and is the type of adaptable intellect found in humans, a flexible form of intelligence capable of learning how to carry out vastly different tasks, anything from hair cutting to building spreadsheets, or to reason about a wide variety of topics based on its accumulated experience. This is the sort of AI more commonly seen in movies, like <em>Skynet</em> in The Terminator, but which doesn’t exist today and AI experts are fiercely divided over how soon it will become a reality.</p>
+
+<p>A survey conducted among four groups of experts in 2012/13 by AI researchers reported a 50 percent chance that Artificial General Intelligence (AGI) would be developed between 2040 and 2050, rising to 90 percent by 2075. The group went even further, predicting that so-called ‘super intelligence’ was expected some 30 years after the achievement of AGI. That said, some AI experts believe such projections are wildly optimistic given our limited understanding of the human brain, and believe that AGI is still centuries away.</p>
+
+<h2 id="the-confusion-ai-vs-machine-learning-vs-deep-learning-differences">The Confusion: AI vs Machine Learning vs Deep Learning Differences</h2>
+<p>Although the three terminologies are usually used interchangeably, they do not quite refer to the same things. Therefore, is there a difference between artificial intelligence, machine learning, and deep learning? Here is an image that attempts to visualize the distinction between them:
+<img src="/assets/aidl/Module_01/aivsdlvsml.png" alt="comparison between AI ML and DL" /></p>
+
+<h2 id="machine-learning">Machine Learning</h2>
+<p>As the name suggests, machine learning can be loosely interpreted to mean empowering computer systems with the ability to “learn”. The intention of ML is to enable machines to learn by themselves using the provided data and make accurate predictions. ML is a subset of artificial intelligence; in fact, it’s simply a technique for realizing AI.
+It is a method of training algorithms such that they can learn how to make decisions. Training in machine learning entails giving a lot of data to the algorithm and allowing it to learn more about the processed information.</p>
+
+<h2 id="deep-learning">Deep learning</h2>
+<p>Deep learning is a subset of ML; in fact, it’s simply a technique for realizing machine learning. In other words, DL is the next evolution of machine learning. DL algorithms are roughly inspired by the information processing patterns found in the human brain. Just like we use our brains to identify patterns and classify various types of information, deep learning algorithms can be taught to accomplish the same tasks for machines. The brain usually tries to decipher the information it receives. It achieves this through labeling and assigning the items into various categories. Whenever we receive a new information, the brain tries to compare it to a known item before making sense of it — which is the same concept deep learning algorithms employ.</p>
+
+<p>For example, artificial neural networks (ANNs) are a type of algorithms that aim to imitate the way our brains make decisions. Comparing deep learning vs machine learning can assist you to understand their subtle differences.
+For example, while DL can automatically discover the features to be used for classification, ML requires these features to be provided manually. Furthermore, in contrast to ML, DL needs high-end machines and considerably big amounts of training data to deliver accurate results.</p>
+
+<h2 id="artificial-neural-networks">Artificial Neural networks</h2>
+<p>Let’s start with a really high level overview so we know what we are working with. Neural networks are multi-layer networks of neurons (the blue and magenta nodes in the chart below) that we use to classify things, make predictions, etc. Below is the diagram of a simple neural network with five inputs, 5 outputs, and two hidden layers of neurons.</p>
+
+<p><img src="/assets/aidl/Module_01/basic_ann.jpeg" alt="Basic Artificial Neural Network" /></p>
+
+<p>Starting from the left, we have:</p>
+<ul>
+  <li>The input layer of our model in orange.</li>
+  <li>Our first hidden layer of neurons in blue.</li>
+  <li>Our second hidden layer of neurons in magenta.</li>
+  <li>The output layer (a.k.a. the prediction) of our model in green.</li>
+</ul>
+
+<p>The arrows that connect the dots shows how all the neurons are interconnected and how data travels from the input layer all the way through to the output layer. Later we will calculate step by step each output value. We will also watch how the neural network learns from its mistake using a process known as backpropagation.</p>
+
+<p>Have a look at: <a href="https://playground.tensorflow.org/">Tensorflow’s Neural Network Playground</a></p>
+
+<h3 id="neuron-and-activation-function">Neuron and activation function</h3>
+<p>Within an artificial neural network, a neuron is a mathematical function that model the functioning of a biological neuron. Typically, a neuron compute the weighted average of its input, and this sum is passed through a nonlinear function, often called activation function, such as the sigmoid. I attach an image from an AI course that illustrates it (note that in this particular case the weighted sum contains also a bias term). Below is a graphical representation of neuron and activation function:</p>
+
+<p><img src="/assets/aidl/Module_01/neuron_and_activation_function.png" alt="A simple representation of neuron and activation function" /></p>
+
+<p>You can use any activation function in neurons. Some activation functions are displayed in following figure:</p>
+
+<p><img src="/assets/aidl/Module_01/some_activation_functions.png" alt="Some activation functions" /></p>
+
+<p>The output of the neuron can then be sent as input to the neurons of another layer, which could repeat the same computation (weighted sum of the input and transformation with activation function). Note that this computation correspond to multiplying a vector of input/activation states with a matrix of weights (and passing the resulting vector through the activation function).</p>
+
+<h3 id="variations-of-artificial-neural-networks">Variations of Artificial Neural networks</h3>
+<p>Below mentioned is a figure, that contains almost all artificial neural network variations:
+<img src="/assets/aidl/Module_01/types_ann.png" alt="Artificial Neural Network Variations" /></p>
+
+<h2 id="availability-of-data-to-train-artificial-neural-networks">Availability of data to train artificial neural Networks</h2>
+<p>Data structure is a particular way of organizing and storing data in a computer such that it can be accessed and modified efficiently. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.</p>
+<h3 id="structured-data">Structured Data:</h3>
+<p>Structured data is data that adheres to a pre-defined data model and is therefore straightforward to analyse. Structured data conforms to a tabular format with relationship between the different rows and columns. Common examples of structured data are Excel files or SQL databases. Each of these have structured rows and columns that can be sorted.</p>
+<h3 id="unstructured-data">Unstructured Data:</h3>
+<p>Unstructured data is information that either does not have a predefined data model or is not organised in a pre-defined manner. Unstructured information is typically text-heavy, but may contain data such as dates, numbers, and facts as well. This results in irregularities and ambiguities that make it difficult to understand using traditional programs as compared to data stored in structured databases. Common examples of unstructured data include audio, video files or No-SQL databases.</p>
+<h3 id="semi-structured-data">Semi-structured Data:</h3>
+<p>Semi-structured data is a form of structured data that does not conform with the formal structure of data models associated with relational databases or other forms of data tables, but nonetheless contain tags or other markers to separate semantic elements and enforce hierarchies of records and fields within the data. Therefore, it is also known as self-describing structure. Examples of semi-structured data include JSON and XML are forms of semi-structured data.</p>
+<h2 id="which-ann-is-best">Which ANN is best?</h2>
+<p>Well there is no direct answer to this question. It depends on multiple factors like:</p>
+<ul>
+  <li>Training data</li>
+  <li>Machine Learning Method (supervised/unsupervised)</li>
+  <li>Computational Resources etc.</li>
+</ul>
+
+<h2 id="machine-learning-algorithms">Machine Learning algorithms</h2>
+<p>There are different ways an algorithm can model a problem based on its interaction with the experience or environment or whatever we want to call the input data. It is popular in machine learning and artificial intelligence textbooks to first consider the learning styles that an algorithm can adopt. There are only a few main learning styles or learning models that an algorithm can have and we’ll go through them here with a few examples of algorithms and problem types that they suit. This taxonomy or way of organizing machine learning algorithms is useful because it forces you to think about the roles of the input data and the model preparation process and select one that is the most appropriate for your problem in order to get the best result.</p>
+<h3 id="supervised-learning">Supervised learning:</h3>
+<p>Input data is called training data and has a known label or result such as spam/not-spam or a stock price at a time. A model is prepared through a training process in which it is required to make predictions and is corrected when those predictions are wrong. The training process continues until the model achieves a desired level of accuracy on the training data.</p>
+
+<p>Example problems are classification and regression. Example algorithms include: Logistic Regression and the Back Propagation Neural Network.</p>
+<h3 id="unsupervised-learning">Unsupervised learning:</h3>
+<p>Input data is not labeled and does not have a known result. A model is prepared by deducing structures present in the input data. This may be to extract general rules. It may be through a mathematical process to systematically reduce redundancy, or it may be to organize data by similarity.</p>
+
+<p>Example problems are clustering, dimensionality reduction and association rule learning. Example algorithms include: the Apriori algorithm and K-Means.</p>
+<h3 id="semi-supervised-learning">Semi-supervised learning:</h3>
+<p>Input data is a mixture of labeled and unlabelled examples. There is a desired prediction problem but the model must learn the structures to organize the data as well as make predictions.</p>
+
+<p>Example problems are classification and regression. Example algorithms are extensions to other flexible methods that make assumptions about how to model the unlabeled data.</p>
+
+<h3 id="conclusion">Conclusion:</h3>
+<p>In this tutorial, we cover the basics of artificial intelligence, machine learning and deep learning. We discussed artificial neural networks and its basics. At the end, we explored learning methods in ML and data types.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="https://towardsdatascience.com/clearing-the-confusion-ai-vs-machine-learning-vs-deep-learning-differences-fce69b21d5eb">Clearing the Confusion: AI vs Machine Learning vs Deep Learning Differences</a></li>
+  <li><a href="https://www.zdnet.com/article/what-is-ai-everything-you-need-to-know-about-artificial-intelligence/">What is AI? Everything you need to know about Artificial Intelligence</a></li>
+  <li><a href="https://stats.stackexchange.com/questions/241888/what-are-neurons-in-neural-networks-how-do-they-work/241904">Discussion on Working of Neural Networks</a></li>
+  <li><a href="https://www.bigdataframework.org/data-types-structured-vs-unstructured-data/">Types of data to deal with!</a></li>
+  <li><a href="https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/">Discussion on Learning Methods</a></li>
+</ul>
+:ET

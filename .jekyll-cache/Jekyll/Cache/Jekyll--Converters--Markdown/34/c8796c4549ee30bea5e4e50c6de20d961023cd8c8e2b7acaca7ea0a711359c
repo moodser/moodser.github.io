@@ -1,0 +1,85 @@
+I"�<hr />
+
+<p><strong>Table of Content</strong>
+  -</p>
+<hr />
+
+<p>This post is a part of series about deep learning algorithms. <a href="/topic/aidl">Visit this link</a>, to explore other related topics/concepts. Today, we are going to discuss logistic regression in context of a simple neural network. But first, we need to clear some basic concepts and terminologies. First of all, lets discuss the mechanism that a machine use to store or represent images (this will help us in better understanding our concepts).</p>
+
+<h2 id="representation-of-images-in-machine">Representation of images in machine</h2>
+<p>Data in computers is stored and transmitted as a series of ones and zeros (also known as Binary). To store an image on a computer, the image is broken down into tiny elements called pixels. A pixel (short for picture element) represents one color. An image with a resolution of 1024 by 798 pixels has 1024 x 798 pixels (817,152 pixels). In order for the computer to store the image, each pixel is represented by a binary value. We call this representation of colors a “bit-plane”. Each bit doubles the number of available colors i.e. 1-bit would give us 2 colors, 2-bits would give us 4 colors and 3-bits would give us 8 colors etc. In a monochrome (two color) image, like the example below, just 1 bit is needed to represent each pixel e.g. 0 for white and 1 for black.</p>
+
+<p><img src="/assets/aidl/Module_02/monochromic-image.png" alt="Monochromic Image" /></p>
+
+<p>Images are stored in scan lines. Each line is encoded from left to right, top to bottom. The image here would receive the following binary values:</p>
+
+<p><img src="/assets/aidl/Module_02/monochromic-image-binary.png" alt="monochromic binary image" /></p>
+
+<p>In an image that uses 4 colors, 2 bits are needed for each pixel. The following example uses two bits to store the following colors:</p>
+
+<p>00 – White; 01 – Black; 10 – Yellow; 11 – Blue</p>
+
+<p><img src="/assets/aidl/Module_02/4-color-picture.png" alt="4-color picture" />
+The image here would receive the following binary values:</p>
+
+<p><img src="/assets/aidl/Module_02/4-color-picture-binary.png" alt="4-color picture binary" /></p>
+
+<p>In order for the computer to interpret the image, the computer needs to know the following:</p>
+
+<ul>
+  <li>Color depth – how many bits represent each pixel</li>
+  <li>Resolution - Width &amp; Height (in pixels)</li>
+</ul>
+
+<p>We call this extra piece of information “metadata”.</p>
+
+<h2 id="feature-vector">Feature Vector</h2>
+<p>A vector is a series of numbers, like a matrix with one column but multiple rows, that can often be represented spatially. A feature is a numerical or symbolic property of an aspect of an object. A feature vector is a vector containing multiple elements about an object. Putting feature vectors for objects together can make up a feature space.</p>
+
+<p>The features may represent, as a whole, one mere pixel or an entire image. The granularity depends on what someone is trying to learn or represent about the object. You could describe a 3-dimensional shape with a feature vector indicating its height, width, depth, etc.</p>
+
+<p><img src="/assets/aidl/Module_02/feature_vector.png" alt="Feature vector illustration" /></p>
+
+<h2 id="binary-classification">Binary Classification</h2>
+<p>Binary classification is the simplest kind of machine learning problem. The goal of binary classification is to categories data points into one of two buckets: 0 or 1, true or false, to survive or not to survive, blue or no blue eyes, etc.</p>
+
+<p>Following are two examples of binary classification:</p>
+<ul>
+  <li><strong>Surviving the Titanic if you were a passenger:</strong> either you have survived or not survived the sinking of the Titanic (assuming you were on the Titanic).</li>
+  <li><strong>Flight delays - admittedly, flight delays would qualify as a regression problem:</strong> there are no finitely many buckets you want to categorize some flight delay into. In this scenario, however, I have transformed the regression problem into a classification problem, since I only want to know if a flight will have a delay of more than 15 minutes or less.</li>
+</ul>
+
+<h2 id="regression">Regression</h2>
+<p>Regression can be defined as a method or an algorithm in Machine Learning that models a target value based on independent predictors. It is essentially a statistical tool used in finding out the relationship between a dependent variable an independent variable. This method comes to play in forecasting and finding out the cause and effect of the relationship between variables. Regression techniques differ based on:</p>
+
+<ul>
+  <li>The number of independent variables</li>
+  <li>The type of relationship between the independent and dependent variables.</li>
+</ul>
+
+<p>Regression is basically performed when the dependent variable is of a continuous data type. The independent variables, however, could be of any data type — continuous, nominal/categorical etc.</p>
+
+<p>Regression methods find the most accurate line describing the relationship between the dependent variable and predictors with least error. In regression, the dependent variable is the function of the independent variable and the coefficient and the error term.</p>
+
+<h3 id="simple-linear-regression">Simple Linear Regression:</h3>
+<p>This is one of the most common and interesting type of Regression technique. Here we predict a target variable Y based on the input variable X. A linear relationship should exist between target variable and predictor and so comes the name Linear Regression.</p>
+
+<p>Consider predicting the salary of an employee based on his/her age. We can easily identify that there seems to be a correlation between employee’s age and salary (more the age more is the salary). The hypothesis of linear regression is</p>
+
+<p><img src="/assets/aidl/Module_02/linear_regression.png" alt="" /></p>
+
+<p>Y represents salary, X is employee’s age and a and b are the coefficients of the equation. So in order to predict Y (salary) given X (age), we need to know the values of a and b (the model’s coefficients).</p>
+
+<p>While training and building a regression model, it is these coefficients which are learned and fitted to training data. The aim of the training is to find the best fit line such that cost function is minimized. The cost function helps in measuring the error. During the training process, we try to minimize the error between actual and predicted values and thus minimizing the cost function.</p>
+
+<p>In the figure, the red points are the data points and the blue line is the predicted line for the training data. To get the predicted value, these data points are projected on to the line.</p>
+
+<p>To summarize, our aim is to find such values of coefficients which will minimize the cost function. The most common cost function is Mean Squared Error (MSE) which is equal to the average squared difference between an observation’s actual and predicted values. The coefficient values can be calculated using the Gradient Descent approach. To give a brief understanding, in Gradient descent we start with some random values of coefficients, compute the gradient of cost function on these values, update the coefficients and calculate the cost function again. This process is repeated until we find a minimum value of cost function.</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li><a href="https://oliviaklose.azurewebsites.net/machine-learning-6-binary-classification/">Discussion: Classification and its applications</a></li>
+  <li><a href="https://teachwithict.weebly.com/binary-representation-of-images.html">Graphical representation of figures in machines</a></li>
+  <li><a href="https://brilliant.org/wiki/feature-vector/">Feature vector discussion</a></li>
+</ul>
+:ET
