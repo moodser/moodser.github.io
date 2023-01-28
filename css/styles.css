@@ -10,6 +10,22 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.skills-list{
+  background-color: grey; 
+  padding: 0.5em; 
+  margin: 0.5em;
+  color: white; 
+  border-radius: 0.5em;
+}
+
+.skills-list:hover{
+  background-color: blueviolet; 
+  padding: 0.5em; 
+  margin: 0.5em;
+  color: white; 
+  border-radius: 0.5em;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -237,11 +253,11 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: blueviolet;
   text-decoration: underline;
 }
 a:hover {
-  color: #974a2d;
+  color: black;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -573,6 +589,12 @@ progress {
 .list-inline-item {
   display: inline-block;
 }
+
+.dev-icons .list-inline-item:hover {
+  display: inline-block;
+  color: blueviolet;
+}
+
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
@@ -7719,7 +7741,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: blueviolet !important;
 }
 
 .text-secondary {
@@ -7810,7 +7832,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: blueviolet !important;
 }
 
 .bg-secondary {
@@ -11400,7 +11422,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: blueviolet;
 }
 
 .dev-icons {
